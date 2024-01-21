@@ -1,10 +1,4 @@
-
-
-
-// const accessToken = "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"
-// const accessToken = process.env.ACCESS_TOKEN;
-
-const accessToken = config.accessToken;
+const accessToken = config.accessToken || "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";
 
 // Theme change dark and light
 const body = document.body;
