@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body .icon {
+    color: black;
+}
+
+/* Dark theme styles */
+.dark-theme {
+
+    background-color: #000000f0;
+    color: #f8f9fa;
+}
+
+.dark-theme a,
+.icon {
+    color: white;
+}
+
+.dark-theme button {
+    color: white;
+}
+
+#themeButton {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* loader */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+
+}
+
+.loader-contanier {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.147);
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* github form */
+#githubForm {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+#githubForm h1 {
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+#githubForm .inputbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inputbox input {
+    padding: 5px 10px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid black;
+}
+
+.inputbox button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* User details */
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px 0;
+}
+
+#backBtn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: none;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#userInformation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#userData {
+    width: 80%;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link i {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.user-content {
+    margin: 10px 30px;
+}
+
+.user-content>p,
+.user-content>img,
+.user-content>h2 {
+    margin: 10px 0;
+}
+
+.shortInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.repositores {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    align-self: center;
+}
+
+.grid-item {
+    border: 1px solid #3498db;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+
+}
+
+.grid-item h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.technologies {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.technologies>div {
+    background-color: #3498db;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.index {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid #3498db;
+    font-weight: 500;
+}
+
+.developer {
+    text-align: end;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+}
+
+/* Responsive Code */
+@media (max-width:783px) {
+    .inputbox input {
+        padding: 5px 10px;
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+        outline: 1px solid black;
+    }
+
+    #githubForm h1 {
+        font-size: 1.5rem;
+    }
+
+    .user-content {
+        margin: 0;
+    }
+
+    .shortInfo {
+        font-size: 0.9rem;
+    }
+
+    .profile-container,
+    .repositories {
+        width: 100%;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Switch to n*1 for smaller screens */
+    }
+
+    img {
+        margin: 0 20px;
+    }
+
+    .grid-item {
+        width: 90%;
+    }
+
+    .grid-item h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    .technologies>div {
+        background-color: #3498db;
+        padding: 7px 10px;
+        color: white;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+}
