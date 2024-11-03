@@ -25,7 +25,7 @@ Welcome to the GitHub User Information  Project! 🚀 This web application is a 
 
 ## Live Demo
 
-Check out the live project [here](#insert_live_link) to experience the convenience of this tool firsthand.
+Check out the live project [here](https://github-user-by-digvijay.netlify.app/) to experience the convenience of this tool firsthand.
 
 ## Explore More
 
